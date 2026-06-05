@@ -1788,6 +1788,10 @@ describe("IRremoteESP8266 Worker native WASM bridge", () => {
     expect(html).toContain('id="payload"');
     expect(html).toContain('id="detected-list"');
     expect(html).toContain('id="mode-segments"');
+    expect(html).toContain("body { margin: 0; min-height: 100vh; background: #f7f8f9; overflow-x: hidden; }");
+    expect(html).toContain("details.log");
+    expect(html).toContain("min-width: 0;");
+    expect(html).toContain("@media (max-width: 560px)");
   });
 
   it("returns explicit JSON errors for unsupported HTTP generation input", async () => {

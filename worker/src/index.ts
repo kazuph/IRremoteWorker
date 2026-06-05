@@ -129,7 +129,7 @@ function renderPage() {
       color: #25272a;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; background: #f7f8f9; }
+    body { margin: 0; min-height: 100vh; background: #f7f8f9; overflow-x: hidden; }
     button, select { font: inherit; }
     main {
       width: min(1320px, calc(100vw - 48px));
@@ -139,7 +139,7 @@ function renderPage() {
       gap: 28px;
       align-items: start;
     }
-    .remote, .detected { min-width: 0; }
+    .remote, .detected { min-width: 0; max-width: 100%; }
     .topbar {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -190,6 +190,7 @@ function renderPage() {
       gap: 20px;
       padding-bottom: 26px;
       border-bottom: 2px solid #e1e1e2;
+      min-width: 0;
     }
     .row {
       display: grid;
@@ -229,6 +230,7 @@ function renderPage() {
       border-radius: 999px;
       overflow: hidden;
       min-height: 54px;
+      min-width: 0;
     }
     .segment {
       display: grid;
@@ -237,6 +239,7 @@ function renderPage() {
       color: #27292c;
       font-size: 25px;
       font-weight: 800;
+      min-width: 0;
     }
     .segment:last-child { border-right: 0; }
     .segment.active {
@@ -249,6 +252,7 @@ function renderPage() {
       grid-template-columns: 112px 1fr 112px;
       align-items: center;
       gap: 24px;
+      min-width: 0;
     }
     .pill {
       height: 54px;
@@ -322,7 +326,7 @@ function renderPage() {
       margin-top: 24px;
     }
     .action {
-      min-width: 180px;
+      min-width: min(180px, 100%);
       height: 54px;
       border: 0;
       border-radius: 999px;
@@ -398,6 +402,9 @@ function renderPage() {
       grid-column: 1 / -1;
       border-top: 2px solid #e1e1e2;
       padding-top: 18px;
+      min-width: 0;
+      max-width: 100%;
+      overflow: hidden;
     }
     details.log summary {
       cursor: pointer;
@@ -409,6 +416,8 @@ function renderPage() {
     pre {
       margin: 0;
       overflow: auto;
+      min-width: 0;
+      max-width: 100%;
       padding: 20px;
       border-radius: 8px;
       background: #20282c;
@@ -424,6 +433,66 @@ function renderPage() {
       .segments { grid-template-columns: repeat(2, minmax(92px, 1fr)); border-radius: 24px; }
       .segment.active { border-radius: 24px; }
       .temp { grid-template-columns: 86px 1fr 86px; gap: 12px; }
+    }
+    @media (max-width: 560px) {
+      main { width: min(100vw - 20px, 480px); margin: 16px auto; }
+      .topbar { margin-bottom: 16px; }
+      .refresh { width: 58px; height: 46px; font-size: 30px; }
+      .identity { padding: 18px 0 22px; }
+      .title { font-size: clamp(36px, 15vw, 54px); }
+      .subtitle { font-size: 18px; }
+      .controls { gap: 16px; margin-top: 22px; }
+      .row {
+        grid-template-columns: 72px minmax(0, 1fr);
+        gap: 10px;
+      }
+      .label {
+        font-size: 21px;
+      }
+      .switch {
+        width: 112px;
+        height: 48px;
+      }
+      .switch::after {
+        width: 36px;
+        height: 36px;
+      }
+      .segments {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border-radius: 22px;
+      }
+      .segment {
+        min-height: 48px;
+        font-size: 22px;
+      }
+      .segment.active { border-radius: 22px; }
+      .temp {
+        grid-template-columns: minmax(58px, 74px) minmax(76px, 1fr) minmax(58px, 74px);
+        gap: 8px;
+      }
+      .pill {
+        height: 48px;
+        font-size: 24px;
+      }
+      .degrees {
+        font-size: clamp(36px, 12vw, 48px);
+      }
+      select {
+        height: 50px;
+        padding-left: 20px;
+        font-size: 22px;
+      }
+      .direction {
+        gap: 16px;
+        font-size: 21px;
+      }
+      .status, .latest-box {
+        font-size: 19px;
+      }
+      .action {
+        width: min(100%, 260px);
+        font-size: 22px;
+      }
     }
   </style>
 </head>
