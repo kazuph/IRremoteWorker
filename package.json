@@ -25,7 +25,9 @@
     "verify:local": "node worker/test/verify-local-worker.mjs",
     "verify:prod": "node worker/test/verify-production.mjs",
     "deploy": "bash --noprofile --norc -lc 'source ../.envrc && wrangler deploy'",
-    "deploy:dry-run": "bash --noprofile --norc -lc 'source ../.envrc && wrangler deploy --dry-run'"
+    "deploy:dry-run": "bash --noprofile --norc -lc 'source ../.envrc && wrangler deploy --dry-run'",
+    "db:migrate:local": "wrangler d1 migrations apply irremote_logs --local",
+    "db:migrate:remote": "wrangler d1 migrations apply irremote_logs --remote"
   },
   "dependencies": {
     "hono": "^4.10.8"

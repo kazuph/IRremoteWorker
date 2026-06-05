@@ -53,7 +53,8 @@ module.
 - `GET /api/class-from-common-surface`: returns the checked-in protocol class
   `fromCommon()` bridge inventory for native-backed reverse common A/C state
   conversion.
-- `GET /api/latest`: returns the most recent infer/generate event.
+- `GET /api/latest`: returns the most recent infer/generate event from the D1
+  event log when the Worker binding is available.
 - `GET /`: StackChan-style live remote dashboard. It mirrors the latest
   inferred manufacturer/protocol, A/C mode, temperature, fan, and swing values,
   keeps a local detected-device list, can generate the currently displayed A/C

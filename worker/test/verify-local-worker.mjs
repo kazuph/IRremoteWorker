@@ -7,6 +7,7 @@ const preferredPort = Number(process.env.IRREMOTE_LOCAL_PORT || 8787);
 
 execSync("npm run native:build", { stdio: "inherit" });
 execSync("npm run native:oracle:build", { stdio: "inherit" });
+execSync("npm run db:migrate:local", { stdio: "inherit" });
 
 async function findOpenPort(startPort) {
   for (let port = startPort; port < startPort + 50; port++) {

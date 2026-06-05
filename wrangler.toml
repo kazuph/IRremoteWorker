@@ -1,3 +1,9 @@
 name = "irremote-worker"
 main = "worker/src/index.ts"
 compatibility_date = "2026-06-04"
+
+[[d1_databases]]
+binding = "IR_LOGS"
+database_name = "irremote_logs"
+database_id = "9adb2b35-ab60-48f3-adae-8983e81b5564"
+migrations_dir = "worker/migrations"

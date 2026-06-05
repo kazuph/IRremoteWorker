@@ -174,6 +174,16 @@ export async function verifyHttpOracle({ baseUrl, label, maxAttempts = 6 }) {
   expectEqual(inferred, nativeInferred, `${checkLabel} generated inference`);
   expectDecodeFields(inferred, nativeInferred, `${checkLabel} generated inference`);
 
+  const latestAfterInference = await retryJson(
+    `${checkLabel} /api/latest after inference`,
+    () => getJson(baseUrl, "/api/latest"),
+    maxAttempts,
+  );
+  const latestResponse = latestAfterInference.latest?.response_json
+    ? JSON.parse(latestAfterInference.latest.response_json)
+    : latestAfterInference.latest;
+  expectEqual(latestResponse, inferred, `${checkLabel} /api/latest after inference`);
+
   const defaultMethodGenerated = await retryJson(
     `${checkLabel} default-argument method generation`,
     () => postJson(baseUrl, "/api/generate", { kind: "method", method: "sendSony", args: ["0x1"] }),
@@ -605,6 +615,7 @@ export async function verifyHttpOracle({ baseUrl, label, maxAttempts = 6 }) {
     protocolClassFromCommon: mirageFromCommon.className,
     generatedProtocol: generated.protocol,
     inferredProtocol: inferred.protocol,
+    latestProtocol: latestResponse.protocol,
     defaultMethod: defaultMethodGenerated.method,
     defaultEncode: defaultEncodeGenerated.method,
     classOnlyMethod: classOnlyGenerated.method,
