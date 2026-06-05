@@ -1,0 +1,40 @@
+{
+  "name": "irremote-worker",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "build": "tsc --noEmit",
+    "native:oracle:build": "IR_SRCS=\"$(find src -maxdepth 1 -name 'ir_*.cpp' | sort | tr '\\n' ' ')\"; c++ -std=gnu++11 -DUNIT_TEST -DSWIGLIB -D_IR_LOCALE_=en-AU -D_IR_ENABLE_DEFAULT_=1 -Isrc -Itest worker/oracle/ir_native_oracle.cpp worker/native/ir_full.cpp src/IRsend.cpp src/IRrecv.cpp src/IRtimer.cpp src/IRutils.cpp src/IRtext.cpp src/IRac.cpp $IR_SRCS -o worker/oracle/ir_native_oracle",
+    "native:build": "mkdir -p worker/native/dist && IR_SRCS=\"$(find src -maxdepth 1 -name 'ir_*.cpp' | sort | tr '\\n' ' ')\"; em++ -std=gnu++11 -O2 -DUNIT_TEST -DSWIGLIB -D_IR_LOCALE_=en-AU -D_IR_ENABLE_DEFAULT_=1 -Isrc -Itest worker/native/ir_full.cpp src/IRsend.cpp src/IRrecv.cpp src/IRtimer.cpp src/IRutils.cpp src/IRtext.cpp src/IRac.cpp $IR_SRCS -s MODULARIZE=1 -s EXPORT_ES6=1 -s ENVIRONMENT=web,worker -s SINGLE_FILE=1 -s STACK_SIZE=2097152 -s EXPORTED_FUNCTIONS='[\"_ir_protocols_json\",\"_ir_generate_value_json\",\"_ir_generate_state_json\",\"_ir_generate_raw_json\",\"_ir_generate_method_json\",\"_ir_encode_json\",\"_ir_generate_class_json\",\"_ir_generate_class_method_json\",\"_ir_generate_class_static_json\",\"_ir_generate_class_common_json\",\"_ir_generate_class_string_json\",\"_ir_generate_class_from_common_json\",\"_ir_generate_ac_full_json\",\"_ir_infer_json\"]' -s EXPORTED_RUNTIME_METHODS='[\"ccall\"]' -o worker/native/dist/ir_native.js",
+    "class:surface": "node worker/test/protocol-class-surface.mjs",
+    "class:surface:write": "node worker/test/write-protocol-class-surface.mjs",
+    "class:raw-surface": "node worker/test/protocol-class-raw-surface.mjs",
+    "class:raw-surface:write": "node worker/test/protocol-class-raw-surface.mjs > worker/generated/protocol-class-raw-surface.json && node worker/test/write-protocol-class-raw-bridge.mjs",
+    "class:method-surface": "node worker/test/protocol-class-method-surface.mjs",
+    "class:method-surface:write": "node worker/test/protocol-class-method-surface.mjs > worker/generated/protocol-class-method-surface.json && node worker/test/write-protocol-class-method-bridge.mjs",
+    "class:static-surface": "node worker/test/protocol-class-static-surface.mjs",
+    "class:static-surface:write": "node worker/test/protocol-class-static-surface.mjs > worker/generated/protocol-class-static-surface.json && node worker/test/write-protocol-class-static-bridge.mjs",
+    "class:common-surface": "node worker/test/protocol-class-common-surface.mjs",
+    "class:common-surface:write": "node worker/test/protocol-class-common-surface.mjs > worker/generated/protocol-class-common-surface.json && node worker/test/write-protocol-class-common-bridge.mjs",
+    "class:string-surface": "node worker/test/protocol-class-string-surface.mjs",
+    "class:string-surface:write": "node worker/test/protocol-class-string-surface.mjs > worker/generated/protocol-class-string-surface.json && node worker/test/write-protocol-class-string-bridge.mjs",
+    "class:from-common-surface": "node worker/test/protocol-class-from-common-surface.mjs",
+    "class:from-common-surface:write": "node worker/test/protocol-class-from-common-surface.mjs > worker/generated/protocol-class-from-common-surface.json && node worker/test/write-protocol-class-from-common-bridge.mjs",
+    "test": "npm run native:build && vitest run",
+    "verify:local": "node worker/test/verify-local-worker.mjs",
+    "verify:prod": "node worker/test/verify-production.mjs",
+    "deploy": "bash --noprofile --norc -lc 'source ../.envrc && wrangler deploy'",
+    "deploy:dry-run": "bash --noprofile --norc -lc 'source ../.envrc && wrangler deploy --dry-run'"
+  },
+  "dependencies": {
+    "hono": "^4.10.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260601.0",
+    "@types/node": "^25.9.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14",
+    "wrangler": "^4.52.0"
+  }
+}

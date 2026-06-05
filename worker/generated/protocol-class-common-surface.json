@@ -1,0 +1,1310 @@
+{
+  "classes": [
+    {
+      "file": "ir_Airton.h",
+      "className": "IRAirtonAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Airwell.h",
+      "className": "IRAirwellAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Amcor.h",
+      "className": "IRAmcorAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kAmcorStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Argo.h",
+      "className": "IRArgoAC",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kArgoStateLength",
+      "rawLengthMethod": "getRawByteLength",
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Argo.h",
+      "className": "IRArgoAC_WREM3",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kArgoStateLength",
+      "rawLengthMethod": "getRawByteLength",
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Bosch.h",
+      "className": "IRBosch144AC",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kBosch144StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Carrier.h",
+      "className": "IRCarrierAc64",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Coolix.h",
+      "className": "IRCoolixAC",
+      "rawType": "uint32",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Corona.h",
+      "className": "IRCoronaAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kCoronaAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin312",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin312StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikinESP",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kDaikinStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin2",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin2StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin216",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin216StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin160",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin160StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin176",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin176StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin128",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin128StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin152",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kDaikin152StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin64",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Delonghi.h",
+      "className": "IRDelonghiAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Ecoclim.h",
+      "className": "IREcoclimAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Electra.h",
+      "className": "IRElectraAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kElectraAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Eurom.h",
+      "className": "IREuromAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kEuromStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Fujitsu.h",
+      "className": "IRFujitsuAC",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kFujitsuAcStateLength",
+      "rawLengthMethod": "getStateLength",
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL)"
+      }
+    },
+    {
+      "file": "ir_Goodweather.h",
+      "className": "IRGoodweatherAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Gree.h",
+      "className": "IRGreeAC",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kGreeStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void)"
+      }
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kHaierACStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC176",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kHaierAC176StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierACYRW02",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kHaierACYRW02StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": "IRHaierAC176",
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC160",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kHaierAC160StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc1",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAc1StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc424",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAc424StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc344",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAc344StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc264",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAc264StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc296",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kHitachiAc296StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Kelon.h",
+      "className": "IRKelonAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "nullptr"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = nullptr) const"
+      }
+    },
+    {
+      "file": "ir_Kelon.h",
+      "className": "IRKelon168Ac",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kKelon168StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Kelvinator.h",
+      "className": "IRKelvinatorAC",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kKelvinatorStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_LG.h",
+      "className": "IRLgAc",
+      "rawType": "uint32",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Midea.h",
+      "className": "IRMideaAC",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL)"
+      }
+    },
+    {
+      "file": "ir_Mirage.h",
+      "className": "IRMirageAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMirageStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishiAC",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMitsubishiACStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishi136",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMitsubishi136StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishi112",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMitsubishi112StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_MitsubishiHeavy.h",
+      "className": "IRMitsubishiHeavy152Ac",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMitsubishiHeavy152StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_MitsubishiHeavy.h",
+      "className": "IRMitsubishiHeavy88Ac",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kMitsubishiHeavy88StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Neoclima.h",
+      "className": "IRNeoclimaAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kNeoclimaStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Panasonic.h",
+      "className": "IRPanasonicAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kPanasonicAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void)"
+      }
+    },
+    {
+      "file": "ir_Panasonic.h",
+      "className": "IRPanasonicAc32",
+      "rawType": "uint32",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Rhoss.h",
+      "className": "IRRhossAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kRhossStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Samsung.h",
+      "className": "IRSamsungAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kSamsungAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Sanyo.h",
+      "className": "IRSanyoAc",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kSanyoAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Sanyo.h",
+      "className": "IRSanyoAc88",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kSanyoAc88StateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Sharp.h",
+      "className": "IRSharpAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kSharpAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Tcl.h",
+      "className": "IRTcl112Ac",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kTcl112AcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Technibel.h",
+      "className": "IRTechnibelAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Teco.h",
+      "className": "IRTecoAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Toshiba.h",
+      "className": "IRToshibaAC",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kToshibaACStateLength",
+      "rawLengthMethod": "getStateLength",
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Transcold.h",
+      "className": "IRTranscoldAc",
+      "rawType": "uint32",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_Trotec.h",
+      "className": "IRTrotecESP",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kTrotecStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Trotec.h",
+      "className": "IRTrotec3550",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kTrotecStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Truma.h",
+      "className": "IRTrumaAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Vestel.h",
+      "className": "IRVestelAc",
+      "rawType": "uint64",
+      "setRawLengthArg": false,
+      "stateLengthExpression": null,
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(void) const"
+      }
+    },
+    {
+      "file": "ir_Voltas.h",
+      "className": "IRVoltas",
+      "rawType": "bytes",
+      "setRawLengthArg": false,
+      "stateLengthExpression": "kVoltasStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL)"
+      }
+    },
+    {
+      "file": "ir_Whirlpool.h",
+      "className": "IRWhirlpoolAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kWhirlpoolAcStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    },
+    {
+      "file": "ir_York.h",
+      "className": "IRYorkAc",
+      "rawType": "bytes",
+      "setRawLengthArg": true,
+      "stateLengthExpression": "kYorkStateLength",
+      "rawLengthMethod": null,
+      "inheritedFrom": null,
+      "method": {
+        "name": "toCommon",
+        "kind": "toCommon",
+        "returnType": "stdAc::state_t",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t *",
+            "name": "prev",
+            "defaultValue": "NULL"
+          }
+        ],
+        "isConst": true,
+        "isStatic": false,
+        "signature": "stdAc::state_t toCommon(const stdAc::state_t *prev = NULL) const"
+      }
+    }
+  ],
+  "classCount": 66,
+  "totalMethods": 66,
+  "excluded": [
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc3",
+      "reason": "missing public instance toCommon() returning stdAc::state_t"
+    }
+  ],
+  "excludedCount": 1
+}

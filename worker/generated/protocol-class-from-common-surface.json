@@ -1,0 +1,28 @@
+{
+  "classes": [
+    {
+      "file": "ir_Mirage.h",
+      "className": "IRMirageAc",
+      "rawType": "bytes",
+      "method": {
+        "name": "fromCommon",
+        "kind": "fromCommon",
+        "returnType": "void",
+        "parameters": [
+          {
+            "type": "const stdAc::state_t",
+            "name": "state",
+            "defaultValue": null
+          }
+        ],
+        "isConst": false,
+        "isStatic": false,
+        "signature": "void fromCommon(const stdAc::state_t state)"
+      }
+    }
+  ],
+  "classCount": 1,
+  "totalMethods": 1,
+  "excluded": [],
+  "excludedCount": 0
+}

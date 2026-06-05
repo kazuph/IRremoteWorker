@@ -1,0 +1,3 @@
+node_modules/
+worker/oracle/ir_native_oracle
+.wrangler/

@@ -1,0 +1,3272 @@
+{
+  "classes": [
+    {
+      "file": "ir_Airton.h",
+      "className": "IRAirtonAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Airwell.h",
+      "className": "IRAirwellAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Amcor.h",
+      "className": "IRAmcorAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Argo.h",
+      "className": "IRArgoAC",
+      "methods": [
+        {
+          "name": "getMessageType",
+          "kind": "getter",
+          "returnType": "argoIrMessageType_t",
+          "parameters": [
+            {
+              "type": "const uint8_t []",
+              "name": "state",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "state",
+              "structType": null
+            },
+            {
+              "type": "const uint16_t",
+              "name": "length",
+              "defaultValue": null,
+              "scalarType": "uint16_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static argoIrMessageType_t getMessageType(const uint8_t state[],\n      const uint16_t length)",
+          "inheritedFrom": "IRArgoACBase<ArgoProtocol>",
+          "scalarReturnType": "argoIrMessageType_t"
+        },
+        {
+          "name": "getStateLengthForIrMsgType",
+          "kind": "getter",
+          "returnType": "uint16_t",
+          "parameters": [
+            {
+              "type": "argoIrMessageType_t",
+              "name": "type",
+              "defaultValue": null,
+              "scalarType": "argoIrMessageType_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static uint16_t getStateLengthForIrMsgType(argoIrMessageType_t type)",
+          "inheritedFrom": "IRArgoACBase<ArgoProtocol>",
+          "scalarReturnType": "uint16_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Argo.h",
+      "className": "IRArgoAC_WREM3",
+      "methods": [
+        {
+          "name": "getMessageType",
+          "kind": "getter",
+          "returnType": "argoIrMessageType_t",
+          "parameters": [
+            {
+              "type": "const ArgoProtocolWREM3&",
+              "name": "raw",
+              "defaultValue": null,
+              "scalarType": "ArgoProtocolWREM3",
+              "source": "stateStruct",
+              "structType": "ArgoProtocolWREM3"
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static argoIrMessageType_t getMessageType(const ArgoProtocolWREM3& raw)",
+          "scalarReturnType": "argoIrMessageType_t"
+        },
+        {
+          "name": "getMessageType",
+          "kind": "getter",
+          "returnType": "argoIrMessageType_t",
+          "parameters": [
+            {
+              "type": "const uint8_t []",
+              "name": "state",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "state",
+              "structType": null
+            },
+            {
+              "type": "const uint16_t",
+              "name": "length",
+              "defaultValue": null,
+              "scalarType": "uint16_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static argoIrMessageType_t getMessageType(const uint8_t state[],\n      const uint16_t length)",
+          "inheritedFrom": "IRArgoACBase<ArgoProtocolWREM3>",
+          "scalarReturnType": "argoIrMessageType_t"
+        },
+        {
+          "name": "getStateLengthForIrMsgType",
+          "kind": "getter",
+          "returnType": "uint16_t",
+          "parameters": [
+            {
+              "type": "argoIrMessageType_t",
+              "name": "type",
+              "defaultValue": null,
+              "scalarType": "argoIrMessageType_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static uint16_t getStateLengthForIrMsgType(argoIrMessageType_t type)",
+          "inheritedFrom": "IRArgoACBase<ArgoProtocolWREM3>",
+          "scalarReturnType": "uint16_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Bosch.h",
+      "className": "IRBosch144AC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint16_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint16_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint16_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Carrier.h",
+      "className": "IRCarrierAc64",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Coolix.h",
+      "className": "IRCoolixAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Corona.h",
+      "className": "IRCoronaAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin312",
+      "methods": [
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikinESP",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin2",
+      "methods": [
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin160",
+      "methods": [
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin176",
+      "methods": [
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin128",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Daikin.h",
+      "className": "IRDaikin64",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Delonghi.h",
+      "className": "IRDelonghiAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Ecoclim.h",
+      "className": "IREcoclimAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Electra.h",
+      "className": "IRElectraAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Eurom.h",
+      "className": "IREuromAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwing",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const bool",
+              "name": "swing",
+              "defaultValue": null,
+              "scalarType": "bool",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwing(const bool swing)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Fujitsu.h",
+      "className": "IRFujitsuAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Goodweather.h",
+      "className": "IRGoodweatherAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Gree.h",
+      "className": "IRGreeAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC176",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC160",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc1",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc424",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc344",
+      "methods": [
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Hitachi.h",
+      "className": "IRHitachiAc296",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Kelon.h",
+      "className": "IRKelonAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Kelon.h",
+      "className": "IRKelon168Ac",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Kelvinator.h",
+      "className": "IRKelvinatorAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_LG.h",
+      "className": "IRLgAc",
+      "methods": [
+        {
+          "name": "getVaneCode",
+          "kind": "getter",
+          "returnType": "uint8_t",
+          "parameters": [
+            {
+              "type": "const uint32_t",
+              "name": "raw",
+              "defaultValue": null,
+              "scalarType": "uint32_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static uint8_t getVaneCode(const uint32_t raw)",
+          "scalarReturnType": "uint8_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint32_t",
+              "name": "code",
+              "defaultValue": null,
+              "scalarType": "uint32_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint32_t code)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonVaneSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonVaneSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Midea.h",
+      "className": "IRMideaAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Mirage.h",
+      "className": "IRMirageAc",
+      "methods": [
+        {
+          "name": "getModel",
+          "kind": "getter",
+          "returnType": "mirage_ac_remote_model_t",
+          "parameters": [
+            {
+              "type": "const uint8_t *",
+              "name": "state",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "state",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static mirage_ac_remote_model_t getModel(const uint8_t *state)",
+          "scalarReturnType": "mirage_ac_remote_model_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            },
+            {
+              "type": "const mirage_ac_remote_model_t",
+              "name": "model",
+              "defaultValue": "mirage_ac_remote_model_t::KKG9AC1",
+              "scalarType": "mirage_ac_remote_model_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed,\n      const mirage_ac_remote_model_t model = mirage_ac_remote_model_t::KKG9AC1)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishiAC",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishi136",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Mitsubishi.h",
+      "className": "IRMitsubishi112",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_MitsubishiHeavy.h",
+      "className": "IRMitsubishiHeavy152Ac",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_MitsubishiHeavy.h",
+      "className": "IRMitsubishiHeavy88Ac",
+      "methods": [
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Neoclima.h",
+      "className": "IRNeoclimaAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Panasonic.h",
+      "className": "IRPanasonicAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonSwingH",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingh_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingh_t toCommonSwingH(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingh_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Panasonic.h",
+      "className": "IRPanasonicAc32",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "pos",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t pos)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Rhoss.h",
+      "className": "IRRhossAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Samsung.h",
+      "className": "IRSamsungAc",
+      "methods": [
+        {
+          "name": "getSectionChecksum",
+          "kind": "getter",
+          "returnType": "uint8_t",
+          "parameters": [
+            {
+              "type": "const uint8_t *",
+              "name": "section",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "state",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static uint8_t getSectionChecksum(const uint8_t *section)",
+          "scalarReturnType": "uint8_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Sanyo.h",
+      "className": "IRSanyoAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Sanyo.h",
+      "className": "IRSanyoAc88",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Tcl.h",
+      "className": "IRTcl112Ac",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        },
+        {
+          "name": "toCommonSwingV",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "setting",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwingV(const uint8_t setting)",
+          "scalarReturnType": "stdAc::swingv_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Technibel.h",
+      "className": "IRTechnibelAc",
+      "methods": [
+        {
+          "name": "toCommonSwing",
+          "kind": "toCommon",
+          "returnType": "stdAc::swingv_t",
+          "parameters": [
+            {
+              "type": "const bool",
+              "name": "swing",
+              "defaultValue": null,
+              "scalarType": "bool",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::swingv_t toCommonSwing(const bool swing)",
+          "scalarReturnType": "stdAc::swingv_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Teco.h",
+      "className": "IRTecoAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Toshiba.h",
+      "className": "IRToshibaAC",
+      "methods": [
+        {
+          "name": "getInternalStateLength",
+          "kind": "getter",
+          "returnType": "uint16_t",
+          "parameters": [
+            {
+              "type": "const uint8_t []",
+              "name": "state",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "state",
+              "structType": null
+            },
+            {
+              "type": "const uint16_t",
+              "name": "size",
+              "defaultValue": null,
+              "scalarType": "uint16_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static uint16_t getInternalStateLength(const uint8_t state[],\n                                         const uint16_t size)",
+          "scalarReturnType": "uint16_t"
+        },
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Transcold.h",
+      "className": "IRTranscoldAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Trotec.h",
+      "className": "IRTrotecESP",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Trotec.h",
+      "className": "IRTrotec3550",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Truma.h",
+      "className": "IRTrumaAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Vestel.h",
+      "className": "IRVestelAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Voltas.h",
+      "className": "IRVoltas",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_Whirlpool.h",
+      "className": "IRWhirlpoolAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    },
+    {
+      "file": "ir_York.h",
+      "className": "IRYorkAc",
+      "methods": [
+        {
+          "name": "toCommonMode",
+          "kind": "toCommon",
+          "returnType": "stdAc::opmode_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "mode",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::opmode_t toCommonMode(const uint8_t mode)",
+          "scalarReturnType": "stdAc::opmode_t"
+        },
+        {
+          "name": "toCommonFanSpeed",
+          "kind": "toCommon",
+          "returnType": "stdAc::fanspeed_t",
+          "parameters": [
+            {
+              "type": "const uint8_t",
+              "name": "speed",
+              "defaultValue": null,
+              "scalarType": "uint8_t",
+              "source": "args",
+              "structType": null
+            }
+          ],
+          "isConst": false,
+          "isStatic": true,
+          "signature": "static stdAc::fanspeed_t toCommonFanSpeed(const uint8_t speed)",
+          "scalarReturnType": "stdAc::fanspeed_t"
+        }
+      ]
+    }
+  ],
+  "classCount": 61,
+  "totalMethods": 149,
+  "excluded": [
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC176",
+      "method": "toCommonTurbo",
+      "reason": "missing linkable Class::method implementation"
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC176",
+      "method": "toCommonQuiet",
+      "reason": "missing linkable Class::method implementation"
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC160",
+      "method": "toCommonTurbo",
+      "reason": "missing linkable Class::method implementation"
+    },
+    {
+      "file": "ir_Haier.h",
+      "className": "IRHaierAC160",
+      "method": "toCommonQuiet",
+      "reason": "missing linkable Class::method implementation"
+    },
+    {
+      "file": "ir_Kelvinator.h",
+      "className": "IRKelvinatorAC",
+      "method": "toCommonSwingV",
+      "reason": "missing linkable Class::method implementation"
+    }
+  ],
+  "excludedCount": 5
+}
